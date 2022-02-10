@@ -9,9 +9,13 @@
 Install latest version of each and test using the following commands:
 
 solana --version
+
 node --version
+
 ts-node --version
+
 yarn --version
+
 git --version
 
 
