@@ -25,35 +25,46 @@ Setting up Candy machine v2 -- Step by Step
 METAPLEX STEPS-- 
 
 1 ) create solana wallet:
+
 solana-keygen new --outfile ./keypair.json
+
 solana-keygen pubkey ./keypair.json
 
 2 ) install metaplex candy machine v2:
+
 git clone https://github.com/metaplex-foundation/metaplex.git
 
 3 ) install dependacies using yarn:
+
 yarn install --cwd **full path of js folder found in metaplex rep.** 
 
 
 4 ) Configure Solana Network and Keypair.json file:
+
 solana config set --url https://api.devnet.solana.com (if launching in devnet)
+
 solana config set --url https://api.mainnet-beta.solana.com (if launching to the public)
+
 solana config set --keypair keypair.json
 
 5 ) Fund wallet (devnet):
+
 solana airdrop 2
+
 solana balance 
 
 6 ) Set up config.json, Use metaplex docs to copy/paste basic config.
 
 7 ) upload images and metadata to Metaplex:
+
 npx ts-node **full path to candy-machine-v2-cli.ts** upload -e devnet -k keypair.json -cp config.json **full path to assets folder** 
 
-
 8 ) Verify Upload: 
+
 npx ts-node **full path to candy-machine-v2-cli.ts** verify_upload -e devnet -k keypair.json
 
 9 ) Mint one to test: 
+
 npx ts-node **full path to candy-machine-v2-cli.ts** mint_one_token -e devnet -k keypair.json
 
 10 ) Go into Candymachine UI folder and set up env. file, inlcude
@@ -61,7 +72,9 @@ npx ts-node **full path to candy-machine-v2-cli.ts** mint_one_token -e devnet -k
     were uploaded. 
 
 11 ) install Candy Machine UI dependacies and start server 
+
 cd **full path to Candy Machine UI folder** 
+
 yarn install && yarn start
 
 ----
