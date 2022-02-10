@@ -29,7 +29,7 @@ git clone https://github.com/metaplex-foundation/metaplex.git
 
 3 ) install dependacies using yarn:
 yarn install --cwd **full path of js folder found in metaplex rep.** 
-yarn install --cwd Z:\Projects\mintingsite-test\metaplex\js
+
 
 4 ) Configure Solana Network and Keypair.json file:
 solana config set --url https://api.devnet.solana.com (if launching in devnet)
@@ -43,14 +43,14 @@ solana balance
 6 ) Set up config.json, Use metaplex docs to copy/paste basic config.
 
 7 ) upload images and metadata to Metaplex:
-ts-node **full path to candy-machine-v2-cli.ts** upload \ -e devnet \ -k keypair.json \ -cp config.json \ **full path to assets folder** 
-npx ts-node Z:\Projects\mintingsite-test\metaplex\js\packages\cli\src\candy-machine-v2-cli.ts upload -e devnet -k keypair.json -cp config.json Z:\Projects\mintingsite-test\assets
+npx ts-node **full path to candy-machine-v2-cli.ts** upload -e devnet -k keypair.json -cp config.json **full path to assets folder** 
+
 
 8 ) Verify Upload: 
-npx ts-node Z:\Projects\mintingsite-test\metaplex\js\packages\cli\src\candy-machine-v2-cli.ts verify_upload -e devnet -k keypair.json
+npx ts-node **full path to candy-machine-v2-cli.ts** verify_upload -e devnet -k keypair.json
 
 9 ) Mint one to test: 
-npx ts-node Z:\Projects\mintingsite-test\metaplex\js\packages\cli\src\candy-machine-v2-cli.ts mint_one_token -e devnet -k keypair.json
+npx ts-node **full path to candy-machine-v2-cli.ts** mint_one_token -e devnet -k keypair.json
 
 10 ) Go into Candymachine UI folder and set up env. file, inlcude
     the config candy machine public key generated when the images 
