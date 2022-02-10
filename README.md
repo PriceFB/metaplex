@@ -83,8 +83,11 @@ Reminders:
 
 Candy Machine key can be found in .cache folder 
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------------------------------------
+
 Below is the Metaplex Official Guide. 
+
+---------------------------------------------------------------------------------
 
 Metaplex is a protocol built on top of Solana that allows:
 
